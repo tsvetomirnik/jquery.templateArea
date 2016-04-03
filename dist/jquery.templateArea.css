@@ -1,0 +1,29 @@
+.template-area .template-area-preview {
+    white-space: pre-wrap;
+    overflow: auto;
+}
+
+.template-area .placeholder {
+    display: inline-block;
+    line-height: 1.2em;
+    color: #fff;
+    padding: 0 0.65em;
+    background-color: #337ab7;
+    border: 1px solid #2e6da4;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.template-area .placeholder:hover {
+    background-color: #286090;
+    border-color: #204d74;
+}
+
+.template-area .placeholder.invalid {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.template-area .placeholder.invalid:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
