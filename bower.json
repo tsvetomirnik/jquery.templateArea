@@ -1,20 +1,23 @@
 {
-  "name": "jquery.templateArea",
-  "description": "Text area with capabilities to define templates",
-  "main": "src/jquery.templateArea.js",
+  "name": "jquery.templateArea.example",
+  "main": "example.js",
   "authors": [
     "Tsvetomir Nikolov <cvetomir.nikolov@gmail.com>"
   ],
-  "dependencies": {
-    "jquery": ">=1.7.0",
-    "jquery-textcomplete": ">=0.5.0"
-  },
+  "description": "",
+  "moduleType": [],
   "license": "MIT",
+  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "jquery": "~2.2.2",
+    "jquery-textcomplete": "~1.3.2"
+  }
 }

@@ -1,0 +1,24 @@
+body pre.prettyprint {
+  background-color: #2c3e50;
+}
+
+/* template-area styles */
+
+.template-area .placeholder {
+    background-color: #18bc9c;
+    border-color: #18bc9c;
+}
+
+.template-area .placeholder:hover {
+    background-color: #128f76;
+    border-color: #11866f;
+}
+
+.template-area .placeholder.invalid {
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+}
+.template-area .placeholder.invalid:hover {
+    background-color: #d62c1a;
+    border-color: #cd2a19;
+}

@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Template Area</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/startbootstrap/bootstrap.css">
+  <link rel="stylesheet" href="css/jquery.templateArea.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/jquery-textcomplete/dist/jquery.textcomplete.js"></script>
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js?skin=desert"></script>
+  <script src="js/jquery.templateArea.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <!--  
+		<div class="navbar-header">
+          <a class="navbar-brand" href="#">Template Area</a>
+        </div>
+		-->
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Template Area</h1>
+      <p>Text area with capabilities to define templates</p>
+      <a class="github-button" href="https://github.com/tsvetomirnik/jquery.templateArea/archive/master.zip" data-icon="octicon-cloud-download"
+      data-style="mega" aria-label="Download tsvetomirnik/jquery.templateArea on GitHub">Download</a>
+      <a class="github-button" href="https://github.com/tsvetomirnik/jquery.templateArea/fork" data-icon="octicon-repo-forked"
+      data-style="mega" aria-label="Fork tsvetomirnik/jquery.templateArea on GitHub">Fork</a>
+      <a class="github-button" href="https://github.com/tsvetomirnik/jquery.templateArea" data-icon="octicon-star" data-style="mega"
+      data-count-href="/tsvetomirnik/jquery.templateArea/stargazers" data-count-api="/repos/tsvetomirnik/jquery.templateArea#stargazers_count"
+      data-count-aria-label="# stargazers on GitHub" aria-label="Star tsvetomirnik/jquery.templateArea on GitHub">Star</a>
+    </div>
+    <div class="panel panel-primary">
+      <div class="panel-heading">Usage</div>
+      <div class="panel-body">
+        <label>Markup:</label>
+        <code><pre class="prettyprint lang-html">&lt;textarea id=&quot;my-textarea&quot;&gt;Example {{Placeholder}}&lt;/textarea&gt;</pre></code>
+        <label>Javascript:</label>
+        <code><pre class="prettyprint lang-js">$('#my-textarea').templateArea({
+  placeholders: [
+    { name: 'Name', description: 'Full name of the recipient' },
+    { name: 'Location', description: 'Address of the recipient' }
+  ]
+});</pre></code>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Example 1</div>
+          <div class="panel-body">
+            <p>Only the defined placeholders, visible in the autocomplete list, are considered as valid.</p>
+            <form>
+              <div class="form-group">
+                <label>Template</label>
+                <textarea rows="5" id="template-area" class="form-control" data-preview-class="form-control">Placeholders like {{Location}} are emphasized, but not {{this}}. &#13;&#10;&#13;&#10;Best wishes, &#13;&#10;{{Name}}</textarea>
+              </div>
+            </form>
+            <p class="alert alert-info"><strong>Note:</strong> Type <strong>"{"</strong> to see all available placeholders.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Example 2</div>
+          <div class="panel-body">
+            <p>Each text wrapped inside <code>{{ }}</code> is considered as a valid placeholder.</p>
+            <form>
+              <div class="form-group">
+                <label>Template</label>
+                <textarea rows="5" id="template-area2" class="form-control" data-preview-class="form-control">Placeholders like {{Location}} and {{Another}} are emphasized. &#13;&#10;&#13;&#10;Best wishes, &#13;&#10;{{Name}}</textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+
+</html>
