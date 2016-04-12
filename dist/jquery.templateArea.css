@@ -4,10 +4,8 @@
 }
 
 .template-area .placeholder {
-    display: inline-block;
-    line-height: 1.2em;
     color: #fff;
-    padding: 0 0.65em;
+    padding: 0 0.3em;
     background-color: #337ab7;
     border: 1px solid #2e6da4;
     border-radius: 3px;
